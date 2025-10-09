@@ -157,6 +157,8 @@ public class HelpFlagsTest extends TestHelper {
         new ToolHelpSpec("unpack200",   1,   1,   1,   0,         1,    0,     2),     // -?, -h, --help, -help accepted but not documented.
         // Oracle proprietary tools:
         new ToolHelpSpec("javapackager",0,   0,   0,   0,         1,    0,   255),     // -help accepted but not documented.
+        new ToolHelpSpec("asprof",      0,   0,   0,   0,         0,    0,     1),     // none, prints help message anyways.
+        new ToolHelpSpec("jfrconv",     0,   0,   0,   0,         0,    0,     1),     // none, prints help message anyways.
     };
 
     // Returns corresponding object from jdkTools array.
